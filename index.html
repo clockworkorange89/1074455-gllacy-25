@@ -23,7 +23,7 @@
          </ul>
           </li>
           <li><a href="inner.html">Доставка и оплата</a></li>
-          <li><a href="index">О компании</a></li>
+          <li><a href="#">О компании</a></li>
         </ul>
         
         <ul class="user">
@@ -35,6 +35,35 @@
       </nav>
     </header>
     <main class="container">
+        <form class ="search-form" action="https://echo.htmlacademy.ru" method="post">
+          <p>
+            <label class="visually-hidden" for="seach-user-id">Поиск</label>
+            <input class="search-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
+          </p>
+
+        </form>
+        <section class="modal modal-login">
+            <h2 class="visually-hidden">Ввод почты и пароля</h2>
+            <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+              <p>
+                <label class="visually-hidden" for="email-user-id">Электронная почта</label>
+                <input class="email-user" id ="email-user-id" type="email" name="email" placeholder="Электронная почта">
+              </p>
+              <p>
+                <label class="visually-hidden" for="user-password-id">Пароль</label>
+                <input class="password-user" id ="user-password-id" type="password" name="password" placeholder="Пароль">
+              </p>
+            
+            <button class="button" type="submit">
+              Войти
+            </button>
+            <ul class = "registration">
+              <li class="forgot-password"><a href="#">Забыли пароль?</a></li>
+              <li class="new-reg"><a href="#">Новая регистрация</a></li>
+            </ul> 
+            </form> 
+          </section>
+
       <section class="site-info">
           <h1 class="page-title">Магазин Глэйси -это онлайн и офлайн-магазин 
             по продажи мороженного собственного производства на развес</h1>
@@ -66,6 +95,30 @@
           </div>
         </div>  
        </div>
+       <section class="modal modal-feedback">
+          <h2>Мы обезательно вам ответим! </h2>
+          <button class="modal-close close-icon" type="button">
+              Закрыть
+            </button>
+          
+          <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
+            <p>
+              <label class="visually-hidden" for="send-name-id">Ка вас зовут?</label>
+              <input class="send-name" id="send-name-id" type="text" name="send-mame-user" placeholder="Как вас зовут?">
+            </p>
+            <p>
+              <label class="visually-hidden" for="send-email-id">Ваша почта для ответа?</label>
+              <input class="send-email" id="send-email-id" type="email" name="send-email-user" placeholder="Ваша почта для ответа?">
+            </p>
+            <p>
+                <label class="visually-hidden" for="record-id">Напишите что-нибудь</label>
+                <input class="record" id="record-id" type="text" name="record"  placeholder="Напишите что-нибудь...">
+              </p>
+            <button class="button" type="submit">
+              Отправить
+            </button>
+          </form>
+        </section>  
     </main>
     <footer class="container">
       <ul>

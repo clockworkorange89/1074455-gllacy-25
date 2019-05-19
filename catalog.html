@@ -41,6 +41,44 @@
               <h2 class="visually-hidden">Фильтр мороженого</h2>
               <!-- Здесь будет форма -->
           </section>
+          
+          <section class ="filled-basket">
+            <h2 class="visually-hidden">Мороженое добавленное в корзину</h2>
+            <form class="checkout" action="https://echo.htmlacademy.ru" method="post">
+              <ul class="select icecream">
+                <li class="selected-icecream">
+                  <button class="modal-close close-icon" type="button">
+                    Закрыть
+                  </button>
+                  <img src="img/icecream-1.jpg" width="20" height="20" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                  <div class="description choice">
+                    <p>Пломбир с апельсиновым джемом</p>
+                    <p>1,5кг x <span class="x-price"></span>200 руб</p>
+                    <p>300 руб</p>
+                  </div>
+                </li>
+                <li class="selected-icecream">
+                  <button class="modal-close close-icon" type="button">
+                    Закрыть
+                  </button>
+                  <img src="img/icecream-3.jpg" width="20" height="20" alt="Сливочное-клубничное с присыпкой из белого шоколада">
+                  <div class="description choice">
+                    <p>Клубничный пломбир с присыпкой из белого шокалада</p>
+                    <p>1,5кг x <span class="x-price"></span>300 руб</p>
+                    <p>300 руб</p>
+                  </div>
+                </li>
+               </ul>
+               <p>
+                  <label class="visually-hidden" for="total-price-id">Итоговая цена</label>
+                  <input class="total-price" id="total-price-id" type="text" name="total-rice" value="Итого:750 руб." readonly>
+                </p>
+               <button class="button" type="submit">
+                  Оформить заказ
+                </button>
+            </form>
+          </section>
+
           <section class="catalog" id="catalog"> 
               <h2 class="visually-hidden">Список мороженого</h2>
               <ul class="catalog-list">
@@ -138,7 +176,7 @@
 
                 <li class="catalog-item">
                 <a href="inner.html" class="catalog-item-name">
-                  <img src="img/icecream-11.jpg" width="180" height="180" alt="ССливочное с кусочками черного шоколада">
+                  <img src="img/icecream-11.jpg" width="180" height="180" alt="Сливочное с кусочками черного шоколада">
                   <span class ="catalog-item-price">355Р/кг</span>                 
                 </a>
                 <a href="inner.html" class="catalog-item-name">
