@@ -2,33 +2,117 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>Каталог</title>
+    <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href ="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
   </head>
   <body>
 
-      <header class="container">
-          <nav class="main-navigation">
+    <header class="container">
+      <nav class="main-navigation">
+        
+        <img src="img/index-logo.svg" width="150" height="20" alt="Логотип  «Глейси»">
+        
+        <ul class="site-navigation">
+          <li class="user-dropdown-menu">
+            <!--Выпадашка-->
             
-            <img src="img/fb.svg" width="20" height="150" alt="Логотип  «Глейси»">
-            
-            <ul class="site-navigation">
-              <li><a href="#catalog">Каталог</a></li>
-              <li><a href="inner.html">Доставка и оплата</a></li>
-              <li><a href="index.html">О компании</a></li>
-            </ul>
-            
-            <ul class="user">
-              <li class ="nav-log-basket seach" ><a href="#">Поиск</a></li>
-              <li class="nav-log-basket login" ><a href="#">Вход</a></li>
-              <li class="nav-log-basket status-basket" ><a href="#">2 товара</a></li>
-            </ul>
-            <ul class="header-contacts">
-                <li class="time_work">C 10 до 20,ежедневно</li>
-                <li class="phone_number">Телефон: +7 (812) 666-02-66</li>
-              </ul>
-           
-          </nav>
-        </header>
+            <a href="catalog.html">Каталог</a>
+            <div class="dropdown-inner">
+              <ul class="sub-menu">
+                <li class="new-ice"><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лёд</a></li>
+                <li><a href="#">Мелорин</a></li>
+               </ul>
+             </div>
+          </li>
+          <li><a href="inner.html">Доставка и оплата</a></li>
+          <li><a href="#">О компании</a></li>
+        </ul>
+        <!--Поиск Вход Карзина пустая-->
+        <ul class="user">
+          <!--Форма поиска-->
+            <li class ="user-dropdown-search search" ><a href="#">Поиск</a>
+              <div class="dropdown-inner">
+                  <form class ="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="form-grouping-search">
+                      <label class="visually-hidden" for="seach-user-id">Поиск</label>
+                      <input class="search-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
+                    </div>
+                   </form>
+               </div>
+             </li>
+             <!--Форма регистрации-->
+            <li class="user-dropdown-login" ><a href="#">Вход</a>
+              <div class ="dropdown-inner">
+                     <h2 class="visually-hidden">Ввод почты и пароля</h2>
+                     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="form-grouping-email">
+                             <label class="visually-hidden" for="email-user-id">Электронная почта</label>
+                             <input class="email-user" id ="email-user-id" type="email" name="email" placeholder="Электронная почта">
+                        </div>
+                        <div class="form-grouping-email-password">
+                          <label class="visually-hidden" for="user-password-id">Пароль</label>
+                          <input class="password-user" id ="user-password-id" type="password" name="password" placeholder="Пароль">
+                        </div>
+                        <button class="button" type="submit">
+                          Войти
+                        </button>
+                        <ul class = "registration">
+                          <li class="forgot-password"><a href="#">Забыли пароль?</a></li>
+                          <li class="new-reg"><a href="#">Новая регистрация</a></li>
+                        </ul> 
+                       </form>
+                </div>
+             </li>
+             <!--Корзина-->
+            <li class="user-dropdown-basket basket" ><a href="#">Корзина</a>
+               <div class="dropwn-inner">
+                  <h2 class="visually-hidden">Мороженое добавленное в корзину</h2>
+                  <form class="checkout" action="https://echo.htmlacademy.ru" method="post">
+                    <ul class="select icecream">
+                      <li class="selected-icecream">
+                        <button class="modal-close close-icon" type="button">
+                          Закрыть
+                        </button>
+                        <img src="img/icecream-1.jpg" width="20" height="20" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+                        <div class="description choice">
+                          <span class="info">Клубничный пломбир с присыпкой из белого шокалада</span>
+                          <span class="info">1,5кг x</span>
+                          <span class="x-price">200 руб</span>
+                          <span class="info-total-price">300 руб</span>
+                        </div>
+                      </li>
+                      
+                      <li class="selected-icecream">
+                        <button class="modal-close close-icon" type="button">
+                          Закрыть
+                        </button>
+                        <img src="img/icecream-3.jpg" width="20" height="20" alt="Сливочное-клубничное с присыпкой из белого шоколада">
+                        <div class="description choice">
+                          <span class="info">Клубничный пломбир с присыпкой из белого шокалада</span>
+                          <span class="info">1,5кг x</span>
+                          <span class="x-price">300 руб</span>
+                          <span class="info-total-price">450 руб</span>
+                        </div>
+                      </li>
+                     </ul>
+                     <span class="main-total-price">Итого: 750руб.</span>
+                     <button class="button" type="submit">
+                        Оформить заказ
+                      </button>
+                  </form>
+                  </div>
+            </li>
+          
+          </ul>
+        </nav>
+     </header>
 
         <main class="container"> 
           <ul class="breadcrumbs">
@@ -41,45 +125,7 @@
               <h2 class="visually-hidden">Фильтр мороженого</h2>
               <!-- Здесь будет форма -->
           </section>
-          <!--Корзина-->
-          
-          <section class ="user-basket-dropdown">
-            <a href="#">Корзина с товаром</a>
-            <h2 class="visually-hidden">Мороженое добавленное в корзину</h2>
-            <form class="checkout" action="https://echo.htmlacademy.ru" method="post">
-              <ul class="select icecream">
-                <li class="selected-icecream">
-                  <button class="modal-close close-icon" type="button">
-                    Закрыть
-                  </button>
-                  <img src="img/icecream-1.jpg" width="20" height="20" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                  <div class="description choice">
-                    <p>Пломбир с апельсиновым джемом</p>
-                    <p>1,5кг x <span class="x-price"></span>200 руб</p>
-                    <p>300 руб</p>
-                  </div>
-                </li>
-                <li class="selected-icecream">
-                  <button class="modal-close close-icon" type="button">
-                    Закрыть
-                  </button>
-                  <img src="img/icecream-3.jpg" width="20" height="20" alt="Сливочное-клубничное с присыпкой из белого шоколада">
-                  <div class="description choice">
-                    <p>Клубничный пломбир с присыпкой из белого шокалада</p>
-                    <p>1,5кг x <span class="x-price"></span>300 руб</p>
-                    <p>300 руб</p>
-                  </div>
-                </li>
-               </ul>
-               <p>
-                  <label class="visually-hidden" for="total-price-id">Итоговая цена</label>
-                  <input class="total-price" id="total-price-id" type="text" name="total-rice" value="Итого:750 руб." readonly>
-                </p>
-               <button class="button" type="submit">
-                  Оформить заказ
-                </button>
-            </form>
-          </section>
+       
 
           <section class="catalog" id="catalog"> 
               <h2 class="visually-hidden">Список мороженого</h2>

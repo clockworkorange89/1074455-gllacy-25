@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link href ="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+
   </head>
   <body>
 
@@ -12,107 +17,114 @@
         <img src="img/index-logo.svg" width="150" height="20" alt="Логотип  «Глейси»">
         
         <ul class="site-navigation">
-          <li>
+          <li class="user-dropdown-menu">
+            <!--Выпадашка-->
+            
             <a href="catalog.html">Каталог</a>
-            <ul class="sub-menu">
-              <li class="new-ice"><a href="#">Новинки</a></li>
-              <li><a href="#">Сливочное</a></li>
-              <li><a href="#">Щербеты</a></li>
-              <li><a href="#">Фруктовый лёд</a></li>
-              <li><a href="#">Мелорин</a></li>
-         </ul>
+            <div class="dropdown-inner">
+              <ul class="sub-menu">
+                <li class="new-ice"><a href="#">Новинки</a></li>
+                <li><a href="#">Сливочное</a></li>
+                <li><a href="#">Щербеты</a></li>
+                <li><a href="#">Фруктовый лёд</a></li>
+                <li><a href="#">Мелорин</a></li>
+               </ul>
+             </div>
           </li>
           <li><a href="inner.html">Доставка и оплата</a></li>
           <li><a href="#">О компании</a></li>
         </ul>
-        <!--Выпадашка-->
-        <div class="user-dropdown-menu">
+        <!--Поиск Вход Карзина пустая-->
         <ul class="user">
-          
-            <li class ="nav-log-basket seach" ><div class="dropdown-inner"><a href="#">Поиск</a></div></li>
-            <li class="nav-log-basket login" ><div class="dropdown-inner"><a href="#">Вход</a></div></li>
-            <li class="nav-log-basket status-basket" ><div class="dropwn-inner"><a href="#">Пусто</a></div></li>
+          <!--Форма поиска-->
+            <li class ="user-dropdown-search search" ><a href="#">Поиск</a>
+              <div class="dropdown-inner">
+                  <form class ="search-form" action="https://echo.htmlacademy.ru" method="post">
+                    <div class="form-grouping-search">
+                      <label class="visually-hidden" for="seach-user-id">Поиск</label>
+                      <input class="search-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
+                    </div>
+                   </form>
+               </div>
+             </li>
+             <!--Форма регистрации-->
+            <li class="user-dropdown-login" ><a href="#">Вход</a>
+              <div class ="dropdown-inner">
+                     <h2 class="visually-hidden">Ввод почты и пароля</h2>
+                     <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+                        <div class="form-grouping-email">
+                             <label class="visually-hidden" for="email-user-id">Электронная почта</label>
+                             <input class="email-user" id ="email-user-id" type="email" name="email" placeholder="Электронная почта">
+                        </div>
+                        <div class="form-grouping-email-password">
+                          <label class="visually-hidden" for="user-password-id">Пароль</label>
+                          <input class="password-user" id ="user-password-id" type="password" name="password" placeholder="Пароль">
+                        </div>
+                        <button class="button" type="submit">
+                          Войти
+                        </button>
+                        <ul class = "registration">
+                          <li class="forgot-password"><a href="#">Забыли пароль?</a></li>
+                          <li class="new-reg"><a href="#">Новая регистрация</a></li>
+                        </ul> 
+                       </form>
+                </div>
+             </li>
+             <!--Корзина-->
+            <li class="user-dropdown-basket empty-basket" ><a href="#">Пусто</a>
+               <div class="dropwn-inner">
+                 <p class="visually-hidden">Ваша корзина пуста!</p>
+               </div>  
+            </li>
           
           </ul>
-         </div>
-       
-      </nav>
-    </header>
-    <main class="container">
-      <!--Форма поиска-->
-        <div class="user-search-dropdown">
-          <a href="#">Поиск</a>
-          <div class ="dropdown-inner">
-
-            <form class ="search-form" action="https://echo.htmlacademy.ru" method="post">
-              <p>
-                <label class="visually-hidden" for="seach-user-id">Поиск</label>
-                <input class="search-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
-              </p>
-
-             </form>
-           </div>
-         </div>
-        <!--Форма входа на сайт-->
-        <section class="user-login-dropdown">
-          <a href="#">Вход</a>
-            <div class ="dropdown-inner">
-             <h2 class="visually-hidden">Ввод почты и пароля</h2>
-            
-                <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
-                  <p>
-                    <label class="visually-hidden" for="email-user-id">Электронная почта</label>
-                    <input class="email-user" id ="email-user-id" type="email" name="email" placeholder="Электронная почта">
-                  </p>
-                  <p>
-                    <label class="visually-hidden" for="user-password-id">Пароль</label>
-                    <input class="password-user" id ="user-password-id" type="password" name="password" placeholder="Пароль">
-                  </p>
-            
-                  <button class="button" type="submit">
-                     Войти
-                  </button>
-                 <ul class = "registration">
-                    <li class="forgot-password"><a href="#">Забыли пароль?</a></li>
-                    <li class="new-reg"><a href="#">Новая регистрация</a></li>
-                 </ul> 
-                 </form>
-                </div>
-        
-          </section>
-
+        </nav>
+     </header>
+     <main>
       <section class="site-info">
-          <h1 class="page-title">Магазин Глэйси -это онлайн и офлайн-магазин 
+          <h1 class="site-info-title">Магазин Глэйси -это онлайн и офлайн-магазин 
             по продажи мороженного собственного производства на развес</h1>
-          <ul class="main main-description">
-          <li class="description icon-ice">Все наше мороженое изготавливается на собственном производстве, с 
+          <ul class="site-info-main main-description">
+          <li class="site-info-description info-icon-ice">Все наше мороженое изготавливается на собственном производстве, с 
             использованием современного оборудования и проверенных временем технологий</li>  
-          <li class="description icon-cow">Закупка ингридиентов производится только у проверенных фермерских 
+          <li class="site-info-description info-icon-cow">Закупка ингридиентов производится только у проверенных фермерских 
             хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</li> 
-          <li class="description icon-leaf">Для приготовления мороженного используются настоящие 
+          <li class="site-info-description info-icon-leaf">Для приготовления мороженного используются настоящие 
             сливки и молоко высочайшего качества. Все дополнительные ингредиентов и добавки 
             произведены из натурального экологического чистого сырья</li> 
-          <li class="description icon-tem">Доставка нашего мороженного до заказчиков 
+          <li class="site-info-description info-icon-tem">Доставка нашего мороженного до заказчиков 
             осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет
           сохранить превосходный вкус</li>
         </ul>  
       </section>
-      <div class ="news-mailing">
-        <article class="news">
-          <h2 class="new-title">Новое в нашем блоге</h2>
-          <a  href="#" class="news_link">10 способов сервировки фруктовых щербетов к столу</a>
+      <div class="news-mailing">
+        <article class="news-blog">
+          <h2 class="new-blog-title">Новое в нашем блоге</h2>
+          <a  href="#" class="news-blog-link">10 способов сервировки фруктовых щербетов к столу</a>
         </article>
         <div class="mailing">
-          <p class="mal info">Подпишись на нашу сладкую рассылку и будите всегда в курсе всего 
+          <p class="mail-info">Подпишись на нашу сладкую рассылку и будите всегда в курсе всего 
           самого вкусного,что у нас происходит.Обещаем не спамить и не слать всякой 
           ненужной ерунды. Честно=)</p>
-          <div class ="send">
-          <!--Форма-->  
+          <div class ="send-mailing">
+            <!--Форма-->  
+            <form class ="send-mailing-email" action="https://echo.htmlacademy.ru" method="post">
+              <div class="send-mailing-e-group">
+                <label class="visually-hidden" for="send-mailing-e-id">Введите почту</label>
+                <input class="password-user" id ="send-mailing-e-id" type="email" 
+                name="email" placeholder="Электронная почта">
+                <button class="button" type="submit">
+                    Отправить
+                </button>
+               </div>
+            </form>
           <a class="button" href="#">Отпрвить</a>
           </div>
         </div>  
        </div>
-       <!--Форма обратной связи-->
+
+  </main>
+    <!--Форма обратной связи-->
        <section class="modal modal-feedback">
           <h2>Мы обезательно вам ответим! </h2>
           <button class="modal-close close-icon" type="button">
@@ -122,7 +134,7 @@
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
             <p>
               <label class="visually-hidden" for="send-name-id">Как вас зовут?</label>
-              <input class="send-name" id="send-name-id" type="text" name="send-mame-user" placeholder="Как вас зовут?">
+              <input class="send-name" id="send-name-id" type="text" name="send-name-user" placeholder="Как вас зовут?">
             </p>
             <p>
               <label class="visually-hidden" for="send-email-id">Ваша почта для ответа?</label>
@@ -137,7 +149,6 @@
             </button>
           </form>
         </section>  
-    </main>
     <footer class="container">
       <ul>
           <li><a class="social-button social-button_tw" href="#">Твитер</a></li>
