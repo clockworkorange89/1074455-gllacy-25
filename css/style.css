@@ -1,7 +1,292 @@
 body{
+    margin: 0;
+    padding: 0;
     font-family:"Roboto", Arial, sans-serif;
-    
     color:white;
     background-color: #849d8f;
+   
+}
+a {
+    text-decoration: none;
+}
+
+/* Навигация */
+.site-navigation a,
+.user a {
+  color:#ffffff;
+}
+
+.site-navigation-catalog{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    text-decoration:underline;
     
 }
+.site-navigation-catalog-2{
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: bold;
+    background-color:#d07058;
+}
+.catalog-new-ice a{
+    font-size: 14px;
+    line-height: 16px;
+    font-weight: bold;
+    color: #323232;
+ 
+}
+.site-navigation,
+.user,
+.catalog-sub-menu,
+.registration {
+    list-style:none;
+    
+}
+
+.catalog-sub-menu a{
+    font-size: 14px;
+    line-height: 16px;
+    color: #323232;
+}
+.catalog-sub-menu a:hover,
+.catalog-sub-menu a:focus {
+    background-color: #fbded8;
+    
+}
+.site-nav-info {
+    font-size: 16px;
+    line-height: 18px;
+    text-decoration:underline;
+}
+
+/* Выпадающие формы */
+.dropdown-inner{
+    background-color:#f8f7f4;
+    display: none;
+} 
+
+.search-form-user {
+    font-size: 14px;
+    line-height: 24px;
+}
+.registration a{
+    font-size: 13px;
+    line-height: 24px;
+    color: #323232; 
+    text-decoration:underline;
+}
+.email-user,
+.password-user{
+    font-size: 14px;
+    line-height: 24px;   
+} 
+
+
+
+.header-info-time{
+    font-size: 14px;
+    line-height: 16px; 
+    font-weight: bold;
+}
+.header-info-number{
+    font-size: 22px;
+    line-height: 24px; 
+    font-weight: bold;
+}
+.description-choice span{
+    font-size: 13px;
+    line-height: 16px;
+    color: #323232; 
+}
+.x-price{
+    opacity:0.5;
+}
+
+/* Страница */
+.breadcrumbs{
+    list-style:none;
+    font-size: 14px;
+    line-height: 16px;
+
+}.breadcrumbs a {
+   color: white;
+   font-size: 14px;
+   line-height: 16px; 
+   text-decoration:underline;
+
+}
+.page-title{
+   font-size: 35px;
+   line-height: 41px;
+   font-weight: bold;
+}
+.catalog-list{
+    list-style:none;
+
+}
+.catalog-list a{
+    color: white;
+}
+.catalog-item-price{
+    font-size: 45px;
+   line-height: 45px;
+   font-weight: bold;
+   
+}
+
+.catalog-item-name {
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration:underline;
+}
+.catalog-item a:hover,
+.catalog-item a:focus {
+    opacity:0.3;
+}
+.main-total-price{
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: bold;
+    color: #323232; 
+}
+
+
+
+
+
+
+.visually-hidden {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+ }
+
+.main-navigation {
+    font-size: 16px;
+    line-height: 18px;
+    color:#ffffff;
+    background-color: #849d8f;
+}
+
+.sub-menu a:hover,
+.sub-menu a:focus {
+    background-color: #fbded8;
+    
+}
+.site-info{
+    
+    background-image: url(../img/wafer.png );
+    margin-left: auto;
+    margin-right: auto;
+    width: 1146px;
+    height: 308px;
+    border-radius:1%;
+ 
+}
+.site-info-title{
+    font-size: 24px;
+    line-height: 30px;
+    color:#323232;
+}
+.site-info-main li{
+    font-size: 16px;
+    line-height: 22px;
+    color:#323232;
+    list-style:none;
+}
+.news-mailing{
+    color:#323232;
+    
+   
+}
+.news-blog{
+    width: 560px;
+    height: 220px;
+    background-color: white;
+    background-image: url(../img/strawberry.png);
+    border-radius:5%;
+}
+.new-blog-title{
+    font-size: 16px;
+    line-height: 22px; 
+    font-weight:400;
+}
+.news-blog-link{
+    color:#323232;
+    font-size: 24px;
+    line-height: 30px;
+    text-decoration:underline;
+    font-weight: bold;
+}
+.mailing{
+    width: 548px;
+    height: 208px;
+    background-color:#f8f7f4;
+    border:7px solid;
+    border-image: url(../img/postal-background.png) 7;
+    border-radius:5%;
+    
+}
+.mail-info {
+    font-size: 16px;
+    line-height: 22px;
+    color:#5a5a5a;
+}
+.send-mailing-e-input {
+    width: 368px;
+    height: 46px;
+    border-radius: 10%;
+}
+/*Модалка*/
+.modal{
+    background-color:#f8f7f4;
+}
+.modal-head{
+    font-size: 24px;
+    line-height: 28px;
+    color:#323232;
+}
+.feedback-form input{
+    font-size: 16px;
+    line-height: 24px;
+
+}
+.button {
+    width: 126px;
+    height: 46px;
+    border-radius:40%;
+    color:white;
+    background:#e95038; 
+    border:none;
+    
+}
+
+
+/*Подвал */
+.footer-list{
+    list-style:none;
+} 
+.footer-list a{
+    color: white
+}
+.link-documents{
+    font-size: 13px;
+    line-height: 18px;
+    text-decoration:underline;
+}
+.copyright{
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.link-academy {
+    font-size: 12px;
+    line-height: 18px;
+    color:white;
+    text-decoration:underline;
+}
+
+

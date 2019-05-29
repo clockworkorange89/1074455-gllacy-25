@@ -17,13 +17,13 @@
         <img src="img/index-logo.svg" width="150" height="20" alt="Логотип  «Глейси»">
         
         <ul class="site-navigation">
-          <li class="user-dropdown-menu">
+          <li class="dropdown">
             <!--Выпадашка-->
             
-            <a href="catalog.html">Каталог</a>
+            <a class="site-navigation-catalog"href="catalog.html">Каталог</a>
             <div class="dropdown-inner">
-              <ul class="sub-menu">
-                <li class="new-ice"><a href="#">Новинки</a></li>
+              <ul class="catalog-sub-menu">
+                <li class="catalog-new-ice"><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лёд</a></li>
@@ -31,24 +31,24 @@
                </ul>
              </div>
           </li>
-          <li><a href="inner.html">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+          <li><a class="site-nav-info" href="inner.html">Доставка и оплата</a></li>
+          <li><a class="site-nav-info" href="#">О компании</a></li>
         </ul>
         <!--Поиск Вход Карзина пустая-->
         <ul class="user">
           <!--Форма поиска-->
-            <li class ="user-dropdown-search search" ><a href="#">Поиск</a>
+            <li class ="dropdown" ><a href="#">Поиск</a>
               <div class="dropdown-inner">
                   <form class ="search-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="form-grouping-search">
+                    <div class="search-form-grouping">
                       <label class="visually-hidden" for="seach-user-id">Поиск</label>
-                      <input class="search-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
+                      <input class="search-form-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
                     </div>
                    </form>
                </div>
              </li>
              <!--Форма регистрации-->
-            <li class="user-dropdown-login" ><a href="#">Вход</a>
+            <li class="dropdown" ><a href="#">Вход</a>
               <div class ="dropdown-inner">
                      <h2 class="visually-hidden">Ввод почты и пароля</h2>
                      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -64,35 +64,36 @@
                           Войти
                         </button>
                         <ul class = "registration">
-                          <li class="forgot-password"><a href="#">Забыли пароль?</a></li>
-                          <li class="new-reg"><a href="#">Новая регистрация</a></li>
+                          <li class="reg-forgot-password"><a href="#">Забыли пароль?</a></li>
+                          <li class="reg-new-reg"><a href="#">Новая регистрация</a></li>
                         </ul> 
                        </form>
                 </div>
              </li>
              <!--Корзина-->
-            <li class="user-dropdown-basket empty-basket" ><a href="#">Пусто</a>
-               <div class="dropwn-inner">
+             
+            <li class="dropdown" ><a href="#">Корзина</a>
+               <div class="dropdown-inner">
                  <p class="visually-hidden">Ваша корзина пуста!</p>
                </div>  
             </li>
-          
+        
           </ul>
-        </nav>
+       </nav>
      </header>
      <main>
       <section class="site-info">
           <h1 class="site-info-title">Магазин Глэйси -это онлайн и офлайн-магазин 
             по продажи мороженного собственного производства на развес</h1>
           <ul class="site-info-main main-description">
-          <li class="site-info-description info-icon-ice">Все наше мороженое изготавливается на собственном производстве, с 
+          <li class=" info-icon-ice">Все наше мороженое изготавливается на собственном производстве, с 
             использованием современного оборудования и проверенных временем технологий</li>  
-          <li class="site-info-description info-icon-cow">Закупка ингридиентов производится только у проверенных фермерских 
+          <li class=" info-icon-cow">Закупка ингридиентов производится только у проверенных фермерских 
             хозяйств и компаний, с которыми нас связывает долговременное сотрудничество</li> 
-          <li class="site-info-description info-icon-leaf">Для приготовления мороженного используются настоящие 
+          <li class="info-icon-leaf">Для приготовления мороженного используются настоящие 
             сливки и молоко высочайшего качества. Все дополнительные ингредиентов и добавки 
             произведены из натурального экологического чистого сырья</li> 
-          <li class="site-info-description info-icon-tem">Доставка нашего мороженного до заказчиков 
+          <li class=" info-icon-tem">Доставка нашего мороженного до заказчиков 
             осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет
           сохранить превосходный вкус</li>
         </ul>  
@@ -111,14 +112,14 @@
             <form class ="send-mailing-email" action="https://echo.htmlacademy.ru" method="post">
               <div class="send-mailing-e-group">
                 <label class="visually-hidden" for="send-mailing-e-id">Введите почту</label>
-                <input class="password-user" id ="send-mailing-e-id" type="email" 
+                <input class="send-mailing-e-input" id ="send-mailing-e-id" type="email" 
                 name="email" placeholder="Электронная почта">
                 <button class="button" type="submit">
                     Отправить
                 </button>
                </div>
             </form>
-          <a class="button" href="#">Отпрвить</a>
+          
           </div>
         </div>  
        </div>
@@ -126,31 +127,32 @@
   </main>
     <!--Форма обратной связи-->
        <section class="modal modal-feedback">
-          <h2>Мы обезательно вам ответим! </h2>
+          <h2 class="modal-head">Мы обезательно вам ответим! </h2>
           <button class="modal-close close-icon" type="button">
               Закрыть
             </button>
           
           <form class="feedback-form" action="https://echo.htmlacademy.ru" method="post">
-            <p>
+            <div class="feedback-group-name">
               <label class="visually-hidden" for="send-name-id">Как вас зовут?</label>
               <input class="send-name" id="send-name-id" type="text" name="send-name-user" placeholder="Как вас зовут?">
-            </p>
-            <p>
+            </div>
+            <div class ="feedback-group-email">
               <label class="visually-hidden" for="send-email-id">Ваша почта для ответа?</label>
               <input class="send-email" id="send-email-id" type="email" name="send-email-user" placeholder="Ваша почта для ответа?">
-            </p>
-            <p>
+            </div>
+            <div class ="feedback-group-des">
                 <label class="visually-hidden" for="record-id">Напишите что-нибудь</label>
                 <input class="record" id="record-id" type="text" name="record"  placeholder="Напишите что-нибудь...">
-              </p>
+            </div>  
             <button class="button" type="submit">
               Отправить
             </button>
           </form>
         </section>  
+
     <footer class="container">
-      <ul>
+      <ul class="footer-list">
           <li><a class="social-button social-button_tw" href="#">Твитер</a></li>
           <li><a class="social-button social-button_in" href="#">Инстаграмм</a></li>
           <li><a class="social-button social-button_fb" href="#">Фейсбук</a></li>
@@ -158,7 +160,7 @@
       </ul>
       <section class="documents">
           <h2 class="visually-hidden">информания</h2>
-        <ul>
+        <ul class="footer-list">
             <li><a class="link-documents" href="#">Для поставщиков</a></li>
             <li><a class="link-documents" href="#">О производстве</a></li>
             <li><a class="link-documents" href="#">Наши документы</a></li>
@@ -168,7 +170,7 @@
         
         <div  class="footer-copyright">
           <img src="img/htmlacademy.svg" width="70" height="70" alt="Логотип «HTML Academy»">
-          <p>Сделано <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+          <p class="copyright">Сделано <a class="link-academy" href="https://htmlacademy.ru">HTML Academy</a>
           (c)2019</p>
         </div>
      </footer>

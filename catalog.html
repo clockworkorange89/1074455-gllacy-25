@@ -17,13 +17,13 @@
         <img src="img/index-logo.svg" width="150" height="20" alt="Логотип  «Глейси»">
         
         <ul class="site-navigation">
-          <li class="user-dropdown-menu">
+          <li class="dropdown">
             <!--Выпадашка-->
             
-            <a href="catalog.html">Каталог</a>
+            <a class="site-navigation-catalog-2"href="catalog.html">Каталог</a>
             <div class="dropdown-inner">
-              <ul class="sub-menu">
-                <li class="new-ice"><a href="#">Новинки</a></li>
+              <ul class="catalog-sub-menu">
+                <li class="catalog-new-ice"><a href="#">Новинки</a></li>
                 <li><a href="#">Сливочное</a></li>
                 <li><a href="#">Щербеты</a></li>
                 <li><a href="#">Фруктовый лёд</a></li>
@@ -31,24 +31,24 @@
                </ul>
              </div>
           </li>
-          <li><a href="inner.html">Доставка и оплата</a></li>
-          <li><a href="#">О компании</a></li>
+          <li><a class="site-nav-info" href="inner.html">Доставка и оплата</a></li>
+          <li><a class="site-nav-info" href="index.html">О компании</a></li>
         </ul>
         <!--Поиск Вход Карзина пустая-->
         <ul class="user">
-          <!--Форма поиска-->
-            <li class ="user-dropdown-search search" ><a href="#">Поиск</a>
+             <!--Форма поиска-->
+            <li class ="dropdown" ><a href="#">Поиск</a>
               <div class="dropdown-inner">
                   <form class ="search-form" action="https://echo.htmlacademy.ru" method="post">
-                    <div class="form-grouping-search">
+                    <div class="search-form-grouping">
                       <label class="visually-hidden" for="seach-user-id">Поиск</label>
-                      <input class="search-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
+                      <input class="search-form-user" id ="seach-user-id" type="search" name="search-site" placeholder="Что ищем?">
                     </div>
                    </form>
                </div>
              </li>
              <!--Форма регистрации-->
-            <li class="user-dropdown-login" ><a href="#">Вход</a>
+            <li class="dropdown" ><a href="#">Вход</a>
               <div class ="dropdown-inner">
                      <h2 class="visually-hidden">Ввод почты и пароля</h2>
                      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
@@ -64,15 +64,15 @@
                           Войти
                         </button>
                         <ul class = "registration">
-                          <li class="forgot-password"><a href="#">Забыли пароль?</a></li>
-                          <li class="new-reg"><a href="#">Новая регистрация</a></li>
+                          <li class="reg-forgot-password"><a href="#">Забыли пароль?</a></li>
+                          <li class="reg-new-reg"><a href="#">Новая регистрация</a></li>
                         </ul> 
                        </form>
                 </div>
              </li>
              <!--Корзина-->
-            <li class="user-dropdown-basket basket" ><a href="#">Корзина</a>
-               <div class="dropwn-inner">
+            <li class="dropdown" ><a href="#">Корзина</a>
+               <div class="dropdown-inner">
                   <h2 class="visually-hidden">Мороженое добавленное в корзину</h2>
                   <form class="checkout" action="https://echo.htmlacademy.ru" method="post">
                     <ul class="select icecream">
@@ -81,7 +81,7 @@
                           Закрыть
                         </button>
                         <img src="img/icecream-1.jpg" width="20" height="20" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-                        <div class="description choice">
+                        <div class="description-choice">
                           <span class="info">Клубничный пломбир с присыпкой из белого шокалада</span>
                           <span class="info">1,5кг x</span>
                           <span class="x-price">200 руб</span>
@@ -94,7 +94,7 @@
                           Закрыть
                         </button>
                         <img src="img/icecream-3.jpg" width="20" height="20" alt="Сливочное-клубничное с присыпкой из белого шоколада">
-                        <div class="description choice">
+                        <div class="description-choice">
                           <span class="info">Клубничный пломбир с присыпкой из белого шокалада</span>
                           <span class="info">1,5кг x</span>
                           <span class="x-price">300 руб</span>
@@ -107,10 +107,14 @@
                         Оформить заказ
                       </button>
                   </form>
-                  </div>
+                </div>
             </li>
           
           </ul>
+          <div class="header-info">
+            <p class="header-info-time">C 10 до 20,ежедневно</p>
+            <p class="header-info-number">Телефон: +7 (812) 666-02-66</p>
+          </div>
         </nav>
      </header>
 
@@ -127,7 +131,7 @@
           </section>
        
 
-          <section class="catalog" id="catalog"> 
+          <section class="catalog"> 
               <h2 class="visually-hidden">Список мороженого</h2>
               <ul class="catalog-list">
                 
@@ -245,7 +249,7 @@
          
         </main>
         <footer class="container">
-            <ul>
+            <ul class="footer-list">
                 <li><a class="social-button social-button_tw" href="#">Твитер</a></li>
                 <li><a class="social-button social-button_in" href="#">Инстаграмм</a></li>
                 <li><a class="social-button social-button_fb" href="#">Фейсбук</a></li>
@@ -253,7 +257,7 @@
             </ul>
             <section class="documents">
                 <h2 class="visually-hidden">информация</h2>
-              <ul>
+              <ul class="footer-list">
                   <li><a class="link-documents link-documents-favorite" href="#">Для поставщиков</a></li>
                   <li><a class="link-documents" href="#">О производстве</a></li>
                   <li><a class="link-documents" href="#">Наши документы</a></li>
@@ -262,7 +266,7 @@
             </section>
             <div  class="footer-copyright">
                 <img src="img/htmlacademy.svg" width="70" height="70" alt="Логотип «HTML Academy»">
-                <p>Сделано <a class="button" href="https://htmlacademy.ru">HTML Academy</a>
+                <p>Сделано <a class="link-academy" href="https://htmlacademy.ru">HTML Academy</a>
                 (c)2019</p>
               </div>
           
