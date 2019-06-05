@@ -359,9 +359,9 @@ a {
     text-decoration:underline;
 }
 .container{
-display: flex;
-flex-direction: row;
-margin-bottom:29px;
+width: 1146px;
+margin-right: auto;
+margin-left: auto;
  
 }
 
