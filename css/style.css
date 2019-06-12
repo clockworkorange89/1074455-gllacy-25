@@ -1,41 +1,16 @@
-/*body >* { background: rgba(255,0,0,0.3);}
-body >*>*>*{background:rgba(255,255,0,0.3); }
-body >*>*>*>* {background:rgba(0,0,255,0.3); }
-body >*>*>*>*>* {background:black; }  */
-
 body{
     margin: 0;
     padding: 0;
     font-family:"Roboto", Arial, sans-serif;
     color:white;
     background-color: #849d8f;
-    width:1200px;
-    height:2416px;
    
 }
-
 a {
     text-decoration: none;
 }
 
 /* Навигация */
-
-.main-navigation{
-    display:flex;
-    flex-direction: row;
-    min-height: 74px;
-    margin-bottom: 14px;
-    width: 1200px;
-    
-}
-.main-navigation-logo{
-    display: flex;
-    width: 156px;
-    height: 66px;
-    margin-right: 27px;
-   
-
-}
 .site-navigation a,
 .user a {
   color:#ffffff;
@@ -44,8 +19,6 @@ a {
 .site-navigation-catalog{
     font-size: 16px;
     line-height: 18px;
-    display:flex;
-    
     font-weight: bold;
     text-decoration:underline;
     
@@ -63,23 +36,8 @@ a {
     color: #323232;
  
 }
-.site-navigation{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top:38px;
-    margin-right:375px;
-    padding:0;
-    list-style:none;
-}
-.user{
-    display: flex;
-    flex-direction: row;
-    margin-top:24px;
-    
-    padding:0;
-    list-style:none;
-}
+.site-navigation,
+.user,
 .catalog-sub-menu,
 .registration {
     list-style:none;
@@ -223,9 +181,8 @@ a {
     background-image: url(../img/wafer.png );
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px;
     width: 1146px;
-    min-height: 308px;
+    height: 308px;
     border-radius:1%;
  
 }
@@ -241,18 +198,13 @@ a {
     list-style:none;
 }
 .news-mailing{
-    display:flex;
-    flex-direction: row;
-
+    color:#323232;
     
    
 }
 .news-blog{
     width: 560px;
-    min-height: 220px;
-    margin-left:27px;
-    margin-right:27px;
-    color:#323232;
+    height: 220px;
     background-color: white;
     background-image: url(../img/strawberry.png);
     border-radius:5%;
@@ -270,10 +222,8 @@ a {
     font-weight: bold;
 }
 .mailing{
-    width: 532px;
-    min-height: 192px;
-    margin-left:27px;
-    margin-right:27px;
+    width: 548px;
+    height: 208px;
     background-color:#f8f7f4;
     border:7px solid;
     border-image: url(../img/postal-background.png) 7;
@@ -316,30 +266,10 @@ a {
 
 
 /*Подвал */
-.footer-list-icon{
-    display: flex;
-    flex-direction: row;
-    margin-right: 238px;
-    
-
+.footer-list{
     list-style:none;
 } 
-.footer-list-info{
-    display: flex;
-    flex-direction: column;
-    margin-right: 232px;
-    list-style:none;
-} 
-.footer-footer-copyright
-{
-    display: flex;
-    flex-direction: column;  
-    margin-left:27px;
-
-}
-
-.footer-list-icon a,
-.footer-list-info a{
+.footer-list a{
     color: white
 }
 .link-documents{
@@ -358,10 +288,7 @@ a {
     color:white;
     text-decoration:underline;
 }
-.container{
-width: 1146px;
-margin-right: auto;
-margin-left: auto;
- 
-}
 
+.container{
+    
+}
